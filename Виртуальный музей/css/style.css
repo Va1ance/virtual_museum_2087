@@ -1,0 +1,428 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Muller', sans-serif;
+  background-color: #F4F4ED;
+}
+
+/* glob */
+
+.flex {
+  display: flex;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.descr-reset {
+  margin: 0;
+}
+
+.container {
+  width: 1620px;
+  margin: 0 auto;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.section-offset:not(:last-child) {
+  margin-bottom: 200px;
+}
+
+.section-title {
+  font-size: 60px;
+  margin-bottom: 200px;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+}
+
+.logotype-link {
+  padding: 15px 0;
+  margin-right: 270px;
+}
+
+.SchLogo {
+  width: 60px;
+  height: 90px;
+}
+
+.header-lists {
+  padding: 30px 0;
+  vertical-align: center;
+  align-items: center;
+}
+
+.header-list-item {
+  height: 30px;
+  font-size: 25px;
+  color: #000;
+  font-weight: 700;
+  transition-duration: 4s;
+  background-position: left center;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+}
+
+.header-list-item:not(:last-child) {
+  margin-right: 210px;
+}
+
+.header-item1 {
+  background-image: url("../img/loogotype.svg/EventsLogo.svg");
+}
+
+.header-item2 {
+  background-image: url("../img/loogotype.svg/MuseumLogo.svg");
+}
+
+.header-item3 {
+  background-image: url("../img/loogotype.svg/ContactsLogo.svg");
+}
+
+.header-btn-list {
+  width: 30px;
+  height: 30px;
+  padding: 45px 0;
+}
+
+.header-left {
+  margin-right: auto;
+}
+
+.header-btn-list:not(:last-child) {
+  margin-right: 130px;
+}
+
+/* hero */
+
+.hero {
+  max-width: 1920px;
+  min-height: 1200px;
+  background-image: url("../img/Other/museum-panarama.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 175px 0 175px 1000px;
+}
+
+.hero-descr-container {
+  max-width: 770px;
+  min-height: 850px;
+  padding: 30px 60px 30px 30px;
+  background-color: #fff;
+  border-radius: 45px;
+  background: rgba(255, 255, 255, 0.80);
+}
+
+.hero-descr-title {
+  max-width: 620px;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 35px;
+  color: #8a8a8a;
+  font-weight: 600;
+}
+
+.hero-descr {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #3e3e3e;
+  margin-bottom: 110px;
+}
+
+.hero-descr:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.hero-descr-name {
+  margin: 0;
+  margin-top: 110px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #2e2e2e;
+  margin-right: 125px;
+}
+
+.hero-descr-icon {
+  border-radius: 100px;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+/* museum */
+
+.museum-card-lists {
+  flex-wrap: wrap;
+}
+
+.card_list {
+  max-width: 760px;
+  width: 100%;
+  height: 900px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  padding: 50px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 45px;
+  background: #D9D9D9;
+  box-shadow: 10px 10px 13px 0px rgba(0, 0, 0, 0.40);
+}
+
+.museum-card-1 {
+  background-image: url("../img/Other/bg-museum_marinci-frontoviki.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.museum-card-2 {
+  background-image: url("../img/Other/bg-museum_voinskoi-slavi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.museum-card-3 {
+  background-image: url("../img/Other/bg-museum_Sudarushka.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.museum-card-4 {
+  background-image: url("../img/Other/bg-museum_Russia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.museum-card-5 {
+  background-image: url("../img/Other/bg-museum_dino.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.museum-card-6 {
+  background-image: url("../img/Other/bg-museum_F.Nancen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.museum-card-7 {
+  background-image: url("../img/Other/bg-museum_mine.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.museum-card-8 {
+  background-image: url("../img/Other/bg-museum_Moscow.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.museum-card-9 {
+  background-image: url("../img/Other/bg-museum_info.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-item-1 {
+  background-color: #3C3C3C;
+  ;
+}
+
+.btn-item-2 {
+  background-color: #40522F;
+  ;
+}
+
+.btn-item-3 {
+  background-color: #323232;
+  ;
+}
+
+.btn-item-4 {
+  background-color: #515151;
+  ;
+}
+
+.btn-item-5 {
+  background-color: #323232;
+  ;
+}
+
+.btn-item-6 {
+  background-color: #445144;
+  ;
+}
+
+.btn-item-7 {
+  background-color: #485B5B;
+  ;
+}
+
+.btn-item-8 {
+  background-color: #5F3B3B;
+  ;
+}
+
+.btn-item-9 {
+  background-color: #4C7B73;
+  ;
+}
+
+.btn-item-10 {
+  background-color: #A5692C;
+  ;
+}
+
+.btn-item-11 {
+  background-color: #823B25;
+  ;
+}
+
+.btn-item-12 {
+  background-color: #2E7F90;
+  ;
+}
+
+.card_list:nth-child(2n) {
+  margin-right: 0;
+}
+
+.card_list:not(:nth-child(-n+8)) {
+  margin-bottom: 0;
+}
+
+.museum-logo {
+  min-width: 300px;
+  min-height: 400px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 280px;
+}
+
+.btn-more {
+  display: block;
+  margin: 0;
+  margin-right: 110px;
+  padding: 40px 120px 40px 90px;
+  font-size: 40px;
+  border-radius: 40px;
+  color: #fff;
+  background-image: url("../img/loogotype.svg/ArrowWhite.svg");
+  background-position: 395px center;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+
+}
+
+/* contacts */
+
+.footer {
+  background-color: #fff;
+}
+
+.footer-cards {
+  flex-wrap: wrap;
+}
+
+.footer-contacts-card {
+  background-color: #fff1e4;
+  border-radius: 30px;
+  min-height: 360px;
+  min-width: 600px;
+  margin-right: 150px;
+  padding: 30px 20px 55px 30px;
+  margin-bottom: 100px;
+}
+
+.footer-contacts-card.header-btn-list:not(:last-child) {
+  margin-right: 0;
+}
+
+.cards-title {
+  margin: 0;
+  font-size: 35px;
+  margin-bottom: 40px;
+  font-size: 35px;
+  color: #878787;
+  font-weight: 600;
+}
+
+.contacts_card-name {
+  margin: 0;
+  margin-bottom: 65px;
+  font-size: 30px;
+  max-width: 390px;
+  font-size: 30px;
+  color: #000;
+  font-weight: 600;
+}
+
+.contacts-link {
+  max-height: 30px;
+}
+
+.contacts-link-container {
+  font-size: 30px;
+  color: #878787;
+  font-weight: 600;
+}
+
+.contacts-link-container:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.school-contacts-link {
+  width: 100px;
+  height: 100px;
+}
+
+.school-contacts-link:not(:last-child) {
+  margin-bottom: 160px;
+}

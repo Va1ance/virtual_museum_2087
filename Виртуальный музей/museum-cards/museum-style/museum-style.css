@@ -1,0 +1,249 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Muller', sans-serif;
+  background-color: #F4F4ED;
+}
+
+/* glob */
+
+.flex {
+  display: flex;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.descr-reset {
+  margin: 0;
+}
+
+.container {
+  max-width: 1520px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 100px;
+  font-weight: 600;
+  color: #000;
+  font-size: 60px;
+  text-align: center;
+}
+
+.section-offset:not(:last-child) {
+  margin-bottom: 200px;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+}
+
+.btn-lists {
+  padding: 15px 0;
+}
+
+.btn-back {
+  padding: 45px 0 45px 10px;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.header-item-1 {
+  background-image: url("../../img/loogotype.svg/ArrowBack.svg");
+}
+
+.header-btn-container {
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  padding: 45px 0 45px 25px;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.header-btn-list {
+  width: 30px;
+  height: 30px;
+  padding: 45px 0;
+}
+
+.header-left {
+  margin-right: auto;
+}
+
+.header-btn-list:not(:last-child) {
+  margin-right: 130px;
+}
+
+/* hero */
+
+.hero {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-height: 1080px;
+  background-image: url("../../img/Other/Panorama_Museum_of_Voinskoi-slavi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* navigation */
+
+.navigation-lists {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navigation-card {
+  display: flex;
+  max-width: 700px;
+  width: 100%;
+  min-height: 500px;
+  padding: 200px 85px 50px 50px;
+  border-radius: 50px;
+  margin-right: 100px;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: end;
+  margin-bottom: 100px;
+}
+
+.navigation-card:nth-child(2n) {
+  margin-right: 0;
+}
+
+.navigation-card:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.navigation-card-1 {
+  background-image: url("../img-museums/museum-voinskoi-slavi/bg-medals.jpg");
+}
+
+.navigation-card-2 {
+  background-image: url("../img-museums/museum-voinskoi-slavi/bg-equipment.jpg");
+}
+
+.navigation-card-3 {
+  background-image: url("../img-museums/museum-voinskoi-slavi/bg-hroniks.jpg");
+}
+
+.navigation-link-descr {
+  margin: 0;
+  padding-right: 30px;
+  font-size: 60px;
+  color: #fff;
+  font-weight: 900;
+  background-image: url("../../img/loogotype.svg/ArrowWhite.svg");
+  background-repeat: no-repeat;
+  background-size: 30px 40px;
+  background-position: right 24px;
+}
+
+/* medals */
+
+.medals-list {
+  min-height: 500px;
+  background-color: #fff;
+  padding: 100px 90px 50px 75px;
+  border-radius: 50px;
+  margin-bottom: 100px;
+}
+
+.medal-list-immage {
+  margin-right: 25px;
+}
+
+.medals-immage {
+  max-width: 500px;
+  width: 100%;
+  min-height: 500px;
+  flex-shrink: 0;
+}
+
+.medal-list-descr {
+  max-width: 810px;
+}
+
+.medals-title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #606060;
+  font-weight: 900;
+}
+
+.second-line {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 25px;
+  color: #1B1B1B;
+  font-weight: 900;
+}
+
+.medals-descr {
+  margin: 0;
+  margin-bottom: 30px;
+  color: #292929;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 30px;
+}
+
+.many-info {
+  font-size: 20px;
+}
+
+.medals-descr:last-child {
+  margin-bottom: 0;
+}

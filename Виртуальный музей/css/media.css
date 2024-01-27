@@ -1,0 +1,540 @@
+@media (max-width: 1600px) {
+    .container {
+        padding: 0 100px;
+    }
+
+    .header__item:not(:last-child) {
+        margin-right: 90px;
+    }
+
+    .museum__item {
+        --offsets: 0;
+    }
+
+    .museum__item {
+        height: 1100px;
+        border-radius: 85px;
+        padding: 60px;
+    }
+
+    .card__logo {
+        max-width: 300px;
+    }
+
+    .card__btn {
+        vertical-align: middle;
+        left: 100px;
+        bottom: 100px;
+        padding: 50px 160px 50px 120px;
+        border-radius: 55px;
+        background-position: 340px center;
+    }
+
+    .footer__list {
+        gap: 50px;
+        --gap: 50px;
+        margin-bottom: 75px;
+    }
+
+    .contacts__link {
+        font-size: 30px;
+    }
+
+    .contacts__descr {
+        font-size: 30px;
+    }
+
+    .contacts__name {
+        margin-bottom: 50px;
+    }
+
+    .footer__container {
+        flex-direction: column;
+    }
+
+    .link__list {
+        flex-direction: row;
+        justify-content: space-around;
+        height: fit-content;
+    }
+
+    .social__item:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1440px) {
+    .nav__item-link {
+        font-size: 20px;
+        background-size: contain;
+    }
+
+    .nav__item:not(:last-child) {
+        margin-right: 120px;
+    }
+
+    .header__item:not(:last-child) {
+        margin-right: 100px;
+    }
+
+    .footer__list {
+        gap: 10px;
+        --gap: 10px;
+        --offsets: 1;
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+
+    .contacts__link {
+        font-size: 24px;
+    }
+
+    .contacts__descr {
+        font-size: 24px;
+    }
+
+    .museum__list {
+        --offsets: 0;
+    }
+
+    .museum__item {
+        height: 885px;
+    }
+
+    .footer__container {
+        flex-direction: column;
+    }
+
+    .link__list {
+        flex-direction: row;
+        justify-content: space-around;
+        height: fit-content;
+    }
+
+    .social__item:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section-offset {
+        padding: 50px 0;
+    }
+
+    .museum__item {
+        background-size: cover;
+        height: 655px;
+        padding: 20px;
+    }
+
+    .container {
+        padding: 0 75px;
+    }
+
+    .nav {
+        padding: 15px 0;
+    }
+
+    .nav__item-link {
+        font-size: 18px;
+    }
+
+    .nav__item:not(:last-child) {
+        margin-right: 60px;
+    }
+
+    .nav__item-link {
+        background-size: contain;
+        padding-left: 25px;
+    }
+
+    .header__item:not(:last-child) {
+        margin-right: 60px;
+    }
+
+    .footer__list {
+        align-items: center;
+        gap: 20px;
+        --gap: 20px;
+        --offsets: 1;
+        margin-bottom: 50px;
+        justify-content: space-between;
+    }
+
+    .contacts__item {
+        height: 100%;
+        padding-bottom: 20px;
+        margin-right: 0;
+        width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
+        padding-right: 20px;
+    }
+
+    .contacts__title {
+        font-size: 30px;
+        width: fit-content;
+    }
+
+    .contacts__name {
+        font-size: 21px;
+        margin-bottom: 40px;
+        width: fit-content;
+        max-width: 250px;
+    }
+
+    .contacts__link {
+        font-size: 20px;
+        width: fit-content;
+    }
+
+    .contacts__descr {
+        font-size: 20px;
+        width: fit-content;
+    }
+
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link__list {
+        flex-direction: row;
+        justify-content: space-around;
+        height: fit-content;
+    }
+
+    .social__item:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .card__logo {
+        max-width: 255px;
+    }
+
+    .card__btn {
+        text-align: center;
+        bottom: 30px;
+        left: 30px;
+        border-radius: 45px;
+        padding: 40px 130px 40px 100px;
+        background-position: 320px center;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 0 50px;
+    }
+
+    .museum__list {
+        padding: 0;
+    }
+
+    .museum__item {
+        height: 815px;
+        padding: 50px;
+    }
+
+    .card__logo {
+        max-width: 255px;
+    }
+
+    .card__btn {
+        text-align: center;
+        bottom: 30px;
+        left: 30px;
+        border-radius: 45px;
+        padding: 40px 130px 40px 100px;
+        background-position: 320px center;
+    }
+
+    .social__item {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer__list {
+        --offsets: 0;
+        gap: 50px;
+        --gap: 50px;
+    }
+}
+
+@media (max-width: 577px) {
+    .nav {
+        display: none;
+    }
+
+    .header__container {
+        justify-content: space-around;
+    }
+
+    .hero__descr:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .hero__descr {
+        font-size: 17px;
+    }
+
+    .avatar__name:not(:last-child) {
+        margin-top: 15px;
+    }
+
+    .avatar__name {
+        font-size: 23px;
+    }
+
+    .avatar__photo {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .hero__title {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .header__item:not(:last-child) {
+        margin-right: 100px;
+    }
+
+    .section__title {
+        margin-bottom: 50px;
+    }
+
+    .museum__item {
+        background-size: cover;
+        border-radius: 40px;
+    }
+
+    .card__logo {
+        width: 200px;
+        height: 300px;
+    }
+
+    .card__btn {
+        border-radius: 25px;
+        padding: 30px 80px 30px 50px;
+        background-position: 270px center;
+        left: 20px;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 476px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .hero__title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .hero__descr:not(:last-child) {
+        margin-bottom: 3px;
+    }
+
+    .hero__descr {
+        font-size: 13px;
+    }
+
+    .museum__item {
+        padding: 20px;
+        min-height: 355px;
+        height: 100%;
+        background-size: cover;
+    }
+
+    .card__btn {
+        background-position: 210px center;
+        font-size: 30px;
+        background: transparent;
+        padding: 0;
+        position: static;
+    }
+
+    .card__btn-1:hover {
+        content: "";
+        background-color: transparent;
+        transform: scale(1.1);
+        transition: .5s;
+    }
+
+    .card__btn-1:active {
+        content: "";
+        background-color: transparent;
+        transform: scale(0.8);
+    }
+
+    .card__btn-2 {
+        background-color: transparent;
+        transition: .3s;
+    }
+
+    .card__btn-2:hover {
+        content: "";
+        background-color: transparent;
+        transform: scale(1.1);
+        transition: .5s;
+    }
+
+    .card__btn-2:active {
+        content: "";
+        background-color: transparent;
+        transform: scale(0.8);
+    }
+
+    .card__btn-3 {
+        background-color: transparent;
+        transition: .3s;
+    }
+
+    .card__btn-3:hover {
+        content: "";
+        background-color: transparent;
+        transform: scale(1.1);
+        transition: .5s;
+    }
+
+    .card__btn-3:active {
+        content: "";
+        background-color: transparent;
+        transform: scale(0.8);
+    }
+
+    .card__btn-4 {
+        background-color: transparent;
+        transition: .3s;
+    }
+
+    .card__btn-4:hover {
+        content: "";
+        background-color: transparent;
+        transform: scale(1.1);
+        transition: .5s;
+    }
+
+    .card__btn-4:active {
+        content: "";
+        background-color: transparent;
+        transform: scale(0.8);
+    }
+
+    .card__btn-5 {
+        background-color: transparent;
+        transition: .3s;
+    }
+
+    .card__btn-5:hover {
+        content: "";
+        background-color: transparent;
+        transform: scale(1.1);
+        transition: .5s;
+    }
+
+    .card__btn-5:active {
+        content: "";
+        background-color: transparent;
+        transform: scale(0.8);
+    }
+
+    .card__btn-6 {
+        background-color: transparent;
+        transition: .3s;
+    }
+
+    .card__btn-6:hover {
+        content: "";
+        background-color: transparent;
+        transform: scale(1.1);
+        transition: .5s;
+    }
+
+    .card__btn-6:active {
+        content: "";
+        background-color: transparent;
+        transform: scale(0.8);
+    }
+
+    .card__btn-7 {
+        background-color: transparent;
+        transition: .3s;
+    }
+
+    .card__btn-7:hover {
+        content: "";
+        background-color: transparent;
+        transform: scale(1.1);
+        transition: .5s;
+    }
+
+    .card__btn-7:active {
+        content: "";
+        background-color: transparent;
+        transform: scale(0.8);
+    }
+
+    .card__btn-8 {
+        background-color: transparent;
+        transition: .3s;
+    }
+
+    .card__btn-8:hover {
+        content: "";
+        background-color: transparent;
+        transform: scale(1.1);
+        transition: .5s;
+    }
+
+    .card__btn-8:active {
+        content: "";
+        background-color: transparent;
+        transform: scale(0.8);
+    }
+
+    .card__btn-9 {
+        background-color: transparent;
+        transition: .3s;
+    }
+
+    .card__btn-9:hover {
+        content: "";
+        background-color: transparent;
+        transform: scale(1.1);
+        transition: .5s;
+    }
+
+    .card__btn-9:active {
+        content: "";
+        background-color: transparent;
+        transform: scale(0.8);
+    }
+
+    .contacts__title {
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+
+    .contacts__name {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .contacts__link {
+        font-size: 17px;
+    }
+
+    .card__logo {
+        width: 130px;
+        height: 170px;
+    }
+
+    .contacts__descr {
+        font-size: 15px;
+    }
+
+    .contacts__link {
+        font-size: 15px;
+    }
+}

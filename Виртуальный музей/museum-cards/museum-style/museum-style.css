@@ -17,6 +17,57 @@ a {
   color: inherit;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerNarrow-Light'),
+    url('../fonts/Mullernarrowlight.woff2') format('woff2'),
+    url('../fonts/Mullernarrowlight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerNarrow-ExtraBold'),
+    url('../fonts/Mullernarrowextrabold.woff2') format('woff2'),
+    url('../fonts/Mullernarrowextrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+font-family: 'Muller';
+src: local('Muller-Regular'),
+  url("../fonts/MullerRegular.woff2") format("woff2"),
+  url("../fonts/MullerRegular.woff") format("woff");
+font-weight: 400;
+font-style: normal;
+font-display: swap;
+}
+
+@font-face {
+font-family: 'Muller';
+src: local('Muller-Light'),
+  url("../fonts/MullerLight.woff2") format("woff2"),
+  url("../fonts/MullerLight.woff") format("woff");
+font-weight: 300;
+font-style: normal;
+font-display: swap;
+}
+
+@font-face {
+font-family: 'Muller';
+src: local('Muller-Bold'),
+  url("../fonts/MullerBold.woff2") format("woff2"),
+  url("../fonts/MullerBold.woff") format("woff");
+font-weight: 600;
+font-style: normal;
+font-display: swap;
+}
+
 img {
   max-width: 100%;
 }
@@ -50,10 +101,10 @@ body {
 }
 
 .container {
-  max-width: 1520px;
+  max-width: 1920px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 200px;
 }
 
 .hidden {
@@ -67,7 +118,7 @@ body {
   overflow: hidden;
 }
 
-.section-title {
+.section__title {
   margin: 0;
   margin-bottom: 100px;
   font-weight: 600;
@@ -125,125 +176,102 @@ body {
   margin-right: 130px;
 }
 
-/* hero */
+/* contacts */
 
-.hero {
-  margin: 0 auto;
-  max-width: 1920px;
-  min-height: 1080px;
-  background-image: url("../../img/Other/Panorama_Museum_of_Voinskoi-slavi.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* navigation */
-
-.navigation-lists {
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.navigation-card {
-  display: flex;
-  max-width: 700px;
-  width: 100%;
-  min-height: 500px;
-  padding: 200px 85px 50px 50px;
-  border-radius: 50px;
-  margin-right: 100px;
-  flex-direction: column;
-  flex-shrink: 0;
-  justify-content: end;
-  margin-bottom: 100px;
-}
-
-.navigation-card:nth-child(2n) {
-  margin-right: 0;
-}
-
-.navigation-card:last-child {
-  margin-right: 0;
-  margin-bottom: 0;
-}
-
-.navigation-card-1 {
-  background-image: url("../img-museums/museum-voinskoi-slavi/bg-medals.jpg");
-}
-
-.navigation-card-2 {
-  background-image: url("../img-museums/museum-voinskoi-slavi/bg-equipment.jpg");
-}
-
-.navigation-card-3 {
-  background-image: url("../img-museums/museum-voinskoi-slavi/bg-hroniks.jpg");
-}
-
-.navigation-link-descr {
-  margin: 0;
-  padding-right: 30px;
-  font-size: 60px;
-  color: #fff;
-  font-weight: 900;
-  background-image: url("../../img/loogotype.svg/ArrowWhite.svg");
-  background-repeat: no-repeat;
-  background-size: 30px 40px;
-  background-position: right 24px;
-}
-
-/* medals */
-
-.medals-list {
-  min-height: 500px;
+.footer {
   background-color: #fff;
-  padding: 100px 90px 50px 75px;
-  border-radius: 50px;
+}
+
+.footer__container {
+  flex-direction: column;
+}
+
+.footer__list {
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 200px;
+  --offsets: 1;
+  --gap: 200px;
+  margin-bottom: 150px;
+}
+
+.contacts__item {
+  background-color: #fff1e4;
+  border-radius: 30px;
+  width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
+  padding: 30px 100px 55px 30px;
   margin-bottom: 100px;
 }
 
-.medal-list-immage {
-  margin-right: 25px;
+.contacts__item:last-child {
+  margin-right: 0;
 }
 
-.medals-immage {
-  max-width: 500px;
-  width: 100%;
-  min-height: 500px;
-  flex-shrink: 0;
-}
-
-.medal-list-descr {
-  max-width: 810px;
-}
-
-.medals-title {
-  margin: 0;
-  margin-bottom: 20px;
-  font-size: 30px;
-  color: #606060;
-  font-weight: 900;
-}
-
-.second-line {
-  margin: 0;
-  margin-bottom: 25px;
-  font-size: 25px;
-  color: #1B1B1B;
-  font-weight: 900;
-}
-
-.medals-descr {
-  margin: 0;
-  margin-bottom: 30px;
-  color: #292929;
-  font-size: 25px;
-  font-weight: 900;
-  line-height: 30px;
-}
-
-.many-info {
-  font-size: 20px;
-}
-
-.medals-descr:last-child {
+.contacts__item:not(:nth-child(-n)) {
   margin-bottom: 0;
 }
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 35px;
+  font-size: 35px;
+  color: #878787;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.contacts__name {
+  margin: 0;
+  margin-bottom: 65px;
+  font-size: 30px;
+  max-width: 390px;
+  font-size: 30px;
+  color: #000;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.contacts__link {
+  font-size: 30px;
+  color: #878787;
+  font-weight: 600;
+  font-style: normal;
+  width: 100%;
+} 
+
+.contacts__descr {
+  font-size: 30px;
+  color: #5c5c5c;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.contacts__container {
+  flex-direction: column;
+}
+
+.social__item {
+  width: 200px;
+  height: 200px;
+}
+
+.link__list {
+  justify-content: space-around;
+}
+
+.social__item {
+  transition: .3s;
+}
+
+.social__item:hover {
+  content: "";
+  transform: scale(1.5);
+}
+
+.social__item:active {
+  content: "";
+  transform: scale(.5);
+}
+
+

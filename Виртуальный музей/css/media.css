@@ -8,11 +8,6 @@
     }
 
     .museum__item {
-        --offsets: 0;
-    }
-
-    .museum__item {
-        height: 1100px;
         border-radius: 85px;
         padding: 60px;
     }
@@ -23,11 +18,11 @@
 
     .card__btn {
         vertical-align: middle;
-        left: 100px;
-        bottom: 100px;
-        padding: 50px 160px 50px 120px;
-        border-radius: 55px;
-        background-position: 340px center;
+        left: 40px;
+        bottom: 40px;
+        padding: 35px 100px 35px 60px;
+        border-radius: 40px;
+        background-position: 280px center;
     }
 
     .footer__list {
@@ -94,11 +89,18 @@
     }
 
     .museum__list {
-        --offsets: 0;
+        padding: 100px;
+        --offsets: 1;
+        gap: 50px;
+        --gap: 50px;
     }
 
-    .museum__item {
-        height: 885px;
+    .card__btn {
+        left: 30px;
+        bottom: 30px;
+        padding: 30px 80px 30px 40px;
+        border-radius: 30px;
+        background-position: 260px center;
     }
 
     .footer__container {
@@ -121,9 +123,12 @@
         padding: 50px 0;
     }
 
+    .museum__list {
+        padding: 0;
+    }
+
     .museum__item {
         background-size: cover;
-        height: 655px;
         padding: 20px;
     }
 
@@ -214,9 +219,9 @@
         text-align: center;
         bottom: 30px;
         left: 30px;
-        border-radius: 45px;
-        padding: 40px 130px 40px 100px;
-        background-position: 320px center;
+        border-radius: 30px;
+        padding: 30px 80px 30px 60px;
+        background-position: 280px center;
     }
 }
 
@@ -226,12 +231,14 @@
     }
 
     .museum__list {
-        padding: 0;
+        --gap: 80px;
+        gap: 80px;
+        padding: 0 150px;
+        --offsets: 0;
     }
 
     .museum__item {
-        height: 815px;
-        padding: 50px;
+        padding: 30px;
     }
 
     .card__logo {
@@ -259,6 +266,13 @@
     }
 }
 
+@media (max-width: 704px) {
+
+    .museum__list {
+        padding: 0;
+    }
+}
+
 @media (max-width: 577px) {
     .nav {
         display: none;
@@ -280,8 +294,12 @@
         margin-top: 15px;
     }
 
+    .hero__container {
+        height: fit-content;
+    }
+
     .avatar__name {
-        font-size: 23px;
+        font-size: 20px;
     }
 
     .avatar__photo {
@@ -339,6 +357,10 @@
         font-size: 13px;
     }
 
+    .museum__list {
+        padding: 0 40px;
+    }
+
     .museum__item {
         padding: 20px;
         min-height: 355px;
@@ -346,169 +368,30 @@
         background-size: cover;
     }
 
+    .museum__item:hover  {
+        transform: scale(1);
+    }
+
+    .museum__item:active  {
+        transform: scale(1);
+    }
+
     .card__btn {
-        background-position: 210px center;
+        background-position: 190px center;
+        padding: 15px 50px 15px 30px;
         font-size: 30px;
-        background: transparent;
-        padding: 0;
-        position: static;
+        position: absolute;
+        border-radius: 20px;
+        left: 20px;
+        bottom: 20px;
     }
 
-    .card__btn-1:hover {
-        content: "";
-        background-color: transparent;
-        transform: scale(1.1);
-        transition: .5s;
+    .card__btn:hover  {
+        transform: scale(1);
     }
 
-    .card__btn-1:active {
-        content: "";
-        background-color: transparent;
-        transform: scale(0.8);
-    }
-
-    .card__btn-2 {
-        background-color: transparent;
-        transition: .3s;
-    }
-
-    .card__btn-2:hover {
-        content: "";
-        background-color: transparent;
-        transform: scale(1.1);
-        transition: .5s;
-    }
-
-    .card__btn-2:active {
-        content: "";
-        background-color: transparent;
-        transform: scale(0.8);
-    }
-
-    .card__btn-3 {
-        background-color: transparent;
-        transition: .3s;
-    }
-
-    .card__btn-3:hover {
-        content: "";
-        background-color: transparent;
-        transform: scale(1.1);
-        transition: .5s;
-    }
-
-    .card__btn-3:active {
-        content: "";
-        background-color: transparent;
-        transform: scale(0.8);
-    }
-
-    .card__btn-4 {
-        background-color: transparent;
-        transition: .3s;
-    }
-
-    .card__btn-4:hover {
-        content: "";
-        background-color: transparent;
-        transform: scale(1.1);
-        transition: .5s;
-    }
-
-    .card__btn-4:active {
-        content: "";
-        background-color: transparent;
-        transform: scale(0.8);
-    }
-
-    .card__btn-5 {
-        background-color: transparent;
-        transition: .3s;
-    }
-
-    .card__btn-5:hover {
-        content: "";
-        background-color: transparent;
-        transform: scale(1.1);
-        transition: .5s;
-    }
-
-    .card__btn-5:active {
-        content: "";
-        background-color: transparent;
-        transform: scale(0.8);
-    }
-
-    .card__btn-6 {
-        background-color: transparent;
-        transition: .3s;
-    }
-
-    .card__btn-6:hover {
-        content: "";
-        background-color: transparent;
-        transform: scale(1.1);
-        transition: .5s;
-    }
-
-    .card__btn-6:active {
-        content: "";
-        background-color: transparent;
-        transform: scale(0.8);
-    }
-
-    .card__btn-7 {
-        background-color: transparent;
-        transition: .3s;
-    }
-
-    .card__btn-7:hover {
-        content: "";
-        background-color: transparent;
-        transform: scale(1.1);
-        transition: .5s;
-    }
-
-    .card__btn-7:active {
-        content: "";
-        background-color: transparent;
-        transform: scale(0.8);
-    }
-
-    .card__btn-8 {
-        background-color: transparent;
-        transition: .3s;
-    }
-
-    .card__btn-8:hover {
-        content: "";
-        background-color: transparent;
-        transform: scale(1.1);
-        transition: .5s;
-    }
-
-    .card__btn-8:active {
-        content: "";
-        background-color: transparent;
-        transform: scale(0.8);
-    }
-
-    .card__btn-9 {
-        background-color: transparent;
-        transition: .3s;
-    }
-
-    .card__btn-9:hover {
-        content: "";
-        background-color: transparent;
-        transform: scale(1.1);
-        transition: .5s;
-    }
-
-    .card__btn-9:active {
-        content: "";
-        background-color: transparent;
-        transform: scale(0.8);
+    .card__btn:active  {
+        transform: scale(1);
     }
 
     .contacts__title {

@@ -6,241 +6,267 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link type="image/x-icon" href="img/loogotype.svg/LogoSchool.svg" rel="shortcut icon">
+  <link type="Image/x-icon" href="img/loogotype.svg/LogoSchool.svg" rel="icon">
   <title>Виртуальный музей школы 2087</title>
 </head>
 
 <body>
   <header class="header">
-    <div class="container">
-      <div class="flex">
-        <div class="header-left flex">
-          <a href="https://sch2087uv.mskobr.ru/" class="logotype-link">
-            <img src="img/loogotype.svg/LogoSchool.svg" alt="Логотипа школы" class="SchLogo">
-          </a>
-          <ul class="header-lists flex list-reset">
-            <li class="header-list-item header-item1">
-              <a href="#events">
-                Мероприятия
-              </a>
-            </li>
-            <li class="header-list-item header-item2">
-              <a href="#museum">
-                Музеи
-              </a>
-            </li>
-            <li class="header-list-item header-item3">
-              <a href="#contacts">
-                Контакты
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="header-right">
-          <ul class="header-right-lists list-reset flex">
-            <li class="header-btn-list">
-              <span class="header-search">
-                <img src="img/loogotype.svg/SearchLogo.svg" alt="Поиск">
-              </span>
-            </li>
-            <li class="header-btn-list">
-              <span class="search-burger">
-                <img src="img/loogotype.svg/MenuLogo.svg" alt="Меню">
-              </span>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <div class="container flex header__container">
+      <a href="https://sch2087uv.mskobr.ru/" class="header__logo logotype">
+        <img src="img/loogotype.svg/LogoSchool.svg" alt="Логотип школы" class="logotype__photo">
+      </a>
+      <nav class="nav flex">
+        <ul class="nav__list flex list-reset">
+          <li class="nav__item">
+            <a href="#events" class="nav__item-1 nav__item-link">
+              Мероприятия
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#museum" class="nav__item-2 nav__item-link">
+              Музеи
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__item-3 nav__item-link">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__list list-reset flex">
+        <li class="header__item">
+          <button class="btn-reset header__item-search">
+            <img src="img/loogotype.svg/SearchLogo.svg" alt="Поиск">
+          </button>
+        </li>
+        <li class="header__item">
+          <button class="btn-reset header__item-search">
+            <img src="img/loogotype.svg/MenuLogo.svg" alt="Меню">
+          </button>
+        </li>
+      </ul>
     </div>
   </header>
   <main>
-    <section class="section-offset hero">
-      <div class="container">
-        <div class="hero-descr-container">
-          <h3 class="hero-descr-title">
+    <section class="hero section-offset">
+      <div class="container hero__wrapper">
+        <div class="hero__container">
+          <h3 class="hero__title">
             Школа 2087 «Открытие» - пространство не только для получения образования.
           </h3>
-          <p class="hero-descr">
+          <p class="hero__descr">
             Одной из важных и значимых составляющих музейной педагогики, есть и будет работа школьного музейного
             комплекса. На сегодняшний день в трех школьных зданиях располагаются 12 музеев: военно-патриотические,
             мемориальный, культурологический, этнографический, научно-технический, историко-краеведческий,
             естественно-научный.
           </p>
-          <p class="hero-descr">
+          <p class="hero__descr">
             Музейный комплекс – это полезная деятельность обучающихся в образовательном пространстве нашей школы, внутри
             которой можно не только побывать на уроке в музее, но и получить дополнительные возможности для участия в
             проектной деятельности, подготовки к чемпионату «Профессионалы», это площадки для посещения участников
             олимпиады «Музеи. Парки. Усадьбы», проведения исторических гостиных и встреч с интересными людьми.
           </p>
-          <p class="hero-descr">
+          <p class="hero__descr">
             В наших музеях организованы как постоянные экспозиции, так и сменные, тематические. Обязательными
             участниками
             этого музейного пространства являются юные экскурсоводы, наши ученики.
           </p>
-          <p class="hero-descr">
+          <p class="hero__descr">
             Наш музейный комплекс - это площадка для общения взрослых и детей, это возможность реализовать себя внутри
             школы даже после уроков. Дорога в будущее, где воплощаются новые идеи нового века. Одна из таких идей –
             интеграция нашего музейного комплекса в музейное пространство города, что позволит нашим ребятам делать для
             себя новые открытия.
           </p>
-          <ul class="flex list-reset">
-            <li>
-              <p class="hero-descr-name">
-                Воронова Александра Игоревна
-              </p>
-            </li>
-            <li>
-                <img class="hero-descr-icon" src="img/Other/avatar-icon.jpg" alt="Фото автора цитаты">
-            </li>
-          </ul>
-
+          <div class="hero__avatar avatar flex">
+            <div class="avatar__container">
+              <p class="avatar__name avatar__name-darker">Директор</p>
+              <p class="avatar__name">Воронова Александра Игоревна</p>
+            </div>
+            <img src="img/Other/avatar-icon.jpg" alt="Автор цитаты" class="avatar__photo">
+          </div>
         </div>
       </div>
     </section>
-    <section id="events" class="section-offset events hidden">
+    <section class="events hidden" id="events">
       <div class="container">
-        <h2 class="section-title">
+        <h2 class="section__title">
           Мероприятия
         </h2>
-        <ul class="events-card-lists">
-          <li class="events-class-list">
-
-          </li>
-          <li class="events-class-list">
-
-          </li>
-          <li class="events-class-list">
-
-          </li>
-        </ul>
       </div>
     </section>
-    <section id="museum" class="section-offset museum">
+    <section class="museum section-offset" id="museum">
       <div class="container">
-        <h2 class="section-title">
+        <h2 class="section__title">
           Музеи
         </h2>
-        <ul class="museum-card-lists list-reset flex">
-          <li class="card_list museum-card-1">
-            <img src="img/Photo.png/Logo_Marinci-Museum.png" alt="Логотип музея" class="museum-logo">
-            <a href="museum-cards/museum_of_Marinci-Frontoviki.html" class="btn-more btn-reset btn-item-1">
+        <ul class="museum__list list-reset flex">
+          <li class="museum__item card museum__item-1">
+            <img src="img/Photo.png/Logo_Marinci-Museum.png" alt="Логотип музея Марьинцы-Фронтовики" class="card__logo">
+            <a href="museum-cards/museum_of_Marinci-Frontoviki.html" class="btn-reset card__btn card__btn-1">
               Подробнее
             </a>
           </li>
-          <li class="card_list museum-card-2">
-            <img src="img/Photo.png/Logo_Voinskoislavi-Museum.png" alt="Логотип музея" class="museum-logo">
-            <a href="museum-cards/museum_of_Voinskoi-slavi.html" class="btn-more btn-reset btn-item-3">
+          <li class="museum__item card museum__item-2">
+            <img src="img/Photo.png/Logo_Voinskoislavi-Museum.png" alt="Логотип музея Воинской славы"
+              class="card__logo">
+            <a href="museum-cards/museum_of_Voinskoi-slavi.html" class="btn-reset card__btn card__btn-2">
               Подробнее
             </a>
           </li>
-          <li class="card_list museum-card-3">
-            <img src="img/Photo.png/Logo_Sudarushka-Museum.png" alt="Логотип музея" class="museum-logo">
-            <a href="museum-cards/museum_of_Sudarushka.html" class="btn-more btn-reset btn-item-4">
+          <li class="museum__item card museum__item-3">
+            <img src="img/Photo.png/Logo_Sudarushka-Museum.png" alt="Логотип музея Сударушка" class="card__logo">
+            <a href="museum-cards/museum_of_Sudarushka.html" class="btn-reset card__btn card__btn-3">
               Подробнее
             </a>
           </li>
-          <li class="card_list museum-card-4">
-            <img src="img/Photo.png/Logo_Russian-Museum.png" alt="Логотип музея" class="museum-logo">
-            <a href="museum-cards/museum_of_Russia.html" class="btn-more btn-reset btn-item-6">
+          <li class="museum__item card museum__item-4">
+            <img src="img/Photo.png/Logo_Russian-Museum.png" alt="Логотип музея Русь" class="card__logo">
+            <a href="museum-cards/museum_of_Russia.html" class="btn-reset card__btn card__btn-4">
               Подробнее
             </a>
           </li>
-          <li class="card_list museum-card-5">
-            <img src="img/Photo.png/Logo_Dino-Museum.png" alt="Логотип музея" class="museum-logo">
-            <a href="museum-cards/museum_of_dino.html" class="btn-more btn-reset btn-item-8">
+          <li class="museum__item card museum__item-5">
+            <img src="img/Photo.png/Logo_Dino-Museum.png" alt="Логотип музея Палеонтологии" class="card__logo">
+            <a href="museum-cards/museum_of_dino.html" class="btn-reset card__btn card__btn-5">
               Подробнее
             </a>
           </li>
-          <li class="card_list museum-card-6">
-            <img src="img/Photo.png/Logo-F.Nancen-Museum.png" alt="Логотип музея" class="museum-logo">
-            <a href="museum-cards/museum_of_F.Nancen.html" class="btn-more btn-reset btn-item-9">
+          <li class="museum__item card museum__item-6">
+            <img src="img/Photo.png/Logo-F.Nancen-Museum.png" alt="Логотип музея им. Ф.Нансена" class="card__logo">
+            <a href="museum-cards/museum_of_F.Nancen.html" class="btn-reset card__btn card__btn-6">
               Подробнее
             </a>
           </li>
-          <li class="card_list museum-card-7">
-            <img src="img/Photo.png/Logo_Mine-Museum.png" alt="Логотип музея" class="museum-logo">
-            <a href="museum-cards/museum_of_mineral.html" class="btn-more btn-reset btn-item-10">
+          <li class="museum__item card museum__item-7">
+            <img src="img/Photo.png/Logo_Mine-Museum.png" alt="Логотип музея минералов" class="card__logo">
+            <a href="museum-cards/museum_of_mineral.html" class="btn-reset card__btn card__btn-7">
               Подробнее
             </a>
           </li>
-          <li class="card_list museum-card-8">
-            <img src="img/Photo.png/Logo_Moscow-Museum.png" alt="Логотип музея" class="museum-logo">
-            <a href="museum-cards/museum_of_Moscow.html" class="btn-more btn-reset btn-item-11">
+          <li class="museum__item card museum__item-8">
+            <img src="img/Photo.png/Logo_Moscow-Museum.png" alt="Логотип музея Моя Москва" class="card__logo">
+            <a href="museum-cards/museum_of_Moscow.html" class="btn-reset card__btn card__btn-8">
               Подробнее
             </a>
           </li>
-          <li class="card_list museum-card-9">
-            <img src="img/Photo.png/Logo_Info-Museum.png" alt="Логотип музея" class="museum-logo">
-            <a href="museum-cards/museum_of_Info.html" class="btn-more btn-reset btn-item-12">
+          <li class="museum__item card museum__item-9">
+            <img src="img/Photo.png/Logo_Info-Museum.png" alt="Логотип музея ИКТ" class="card__logo">
+            <a href="museum-cards/museum_of_Info.html" class="btn-reset card__btn card__btn-9">
               Подробнее
             </a>
           </li>
         </ul>
       </div>
     </section>
-    <footer id="contacts" class="section-offset footer">
-      <div class="container">
-        <h2 class="section-title">
-          Контакты
-        </h2>
-        <div class="contacts-container-cards flex">
-          <ul class="footer-cards flex list-reset">
-            <li class="footer-contacts-card">
-              <h3 class="cards-title">
+  </main>
+  <footer class="footer section-offset" id="contacts">
+    <div class="container">
+      <h2 class="section__title">
+        Контакты
+      </h2>
+      <div class="flex footer__container link">
+        <ul class="footer__list flex list-reset contacts">
+          <li class="contacts__item">
+            <address>
+              <p class="contacts__title">
                 Директор
-              </h3>
-              <p class="contacts_card-name">
+              </p>
+              <p class="contacts__name descr-reset">
                 Воронова Александра Игоревна
               </p>
-              <ul class="contacts-lists list-reset">
-                <li class="contacts-link-container"><a href="tel:+74994772087" class="contacts-link">
-                    Тел.:+7(499) 477 20-87
-                  </a>
-                </li>
-                <li class="contacts-link-container">
-                  <a href="mailto:voronovaAI@edu.mos.ru" class="contacts-link">
-                    E-mail: VoronovaAI@edu.mos.ru
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="footer-contacts-card">
-              <h3 class="cards-title">
+              <div class="contacts__container flex">
+                <a href="tel:+74994772087" class="contacts__link">
+                  Телефон: +7(499) 477 20-87
+                </a>
+                <a href="mailto:voronovaAI@edu.mos.ru" class="contacts__link">
+                  Эл. почта: voronovaAI@edu.mos.ru
+                </a>
+              </div>
+            </address>
+          </li>
+          <li class="contacts__item">
+            <address>
+              <p class="contacts__title">
                 Секретарь
-              </h3>
-              <p class="contacts_card-name">
-                Мыльникова Светлана Владимировна
               </p>
-              <ul class="contacts-lists list-reset">
-                <li class="contacts-link-container">
-                  <a href="tel:+74994772087" class="contacts-link">
-                    Тел.:+7(499)477 20-87
-                  </a>
-                </li>
-                <li class="contacts-link-container">
-                  <a href="mailto:2087@edu.mos.ru" class="contacts-link">
-                    E-mail: 2087@edu.mos.ru
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="school-contacts-links list-reset">
-            <li class="school-contacts-link">
-              <a href="https://vk.com/sch2087" target="_blank">
-                <img src="img/loogotype.svg/VKLogo.svg" alt="">
-              </a>
-            </li>
-            <li class="school-contacts-link">
-              <a href="https://www.youtube.com/@sch2087" target="_blank">
-                <img src="img/loogotype.svg/YouTubeLogo.svg" alt="">
-              </a>
-            </li>
-          </ul>
-        </div>
+              <p class="contacts__name descr-reset">
+                Мельникова Светлана Владимировна
+              </p>
+              <div class="contacts__container flex">
+                <a href="tel:+74994772087" class="contacts__link">
+                  Телефон: +7(499) 477 20-87
+                </a>
+                <span class="contacts__descr">Добавочный номер: 2001 </span>
+                <a href="mailto:2087@edu.mos.ru" class="contacts__link">
+                  Эл. почта: 2087@edu.mos.ru
+                </a>
+              </div>
+            </address>
+          </li>
+        </ul>
+        <ul class="link__list social list-reset flex">
+          <li class="social__item">
+            <a href="https://vk.com/sch2087" target="_blank" class="social__link">
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.04 112.04">
+                <defs>
+                  <style>
+                    .cls-3 {
+                      fill: #4d76a4;
+                    }
+
+                    .cls-3,
+                    .cls-4 {
+                      stroke-width: 0px;
+                    }
+
+                    .cls-4 {
+                      fill: #fff;
+                    }
+                  </style>
+                </defs>
+                <path class="cls-3"
+                  d="m112.04,56.02c0,30.94-25.08,56.02-56.02,56.02S0,86.96,0,56.02,25.08,0,56.02,0s56.02,25.08,56.02,56.02Z" />
+                <path class="cls-4"
+                  d="m88.36,40.78c-.91-.77-4.41-.73-7.88-.72-3.55.02-7.07.04-7.88.36-.75.3-2.45,4.39-4.65,8.6-2.49,4.77-5.58,9.35-7.52,9.32-2.52-.04-1.94-7.87-1.79-13.62.1-3.81-.52-5-1.08-5.38-1.35-.9-5.01-1.79-5.01-1.79,0,0-10.97-.83-12.54,3.94,2.09.27,5.69-.39,4.3,14.34-.07.71-1.68,6.78-6.81-1.43-1.27-2.03-6.19-14.29-7.88-14.34-5.69-.15-11.26-.39-13.26.72-1.82,1.01,2.46,9.48,9.67,20.79,5.9,9.24,12.15,16.46,22.93,18.28,2.01.2,7.32.44,8.96-.36,1.14-.56-.25-8.57,3.58-9.32,1.72-.34,8.26,8.32,10.75,9.32,1.51.6,4.83.83,8.24.72,3.68-.12,7.84.32,8.24-2.15.9-5.53-11.1-12.71-11.46-16.13-.26-2.45,4.39-6.96,6.81-10.39,2.94-4.17,6.13-9.2,4.3-10.75Z" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://www.youtube.com/channel/UCAM1BBc60v43Ym1KBYIYjFw" target="_blank" class="social__link">
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.04 112.04">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #eb5b4c;
+                    }
+
+                    .cls-1,
+                    .cls-2 {
+                      stroke-width: 0px;
+                    }
+
+                    .cls-2 {
+                      fill: #fff;
+                    }
+                  </style>
+                </defs>
+                <path class="cls-1"
+                  d="m112.04,56.02c0,30.94-25.08,56.02-56.02,56.02S0,86.96,0,56.02,25.08,0,56.02,0s56.02,25.08,56.02,56.02Z" />
+                <path class="cls-2"
+                  d="m88.53,42.34s-.65-4.77-2.63-6.87c-2.52-2.75-5.35-2.77-6.64-2.93-9.29-.7-23.22-.7-23.22-.7h-.03s-13.93,0-23.22.7c-1.3.16-4.12.17-6.65,2.93-1.98,2.1-2.63,6.87-2.63,6.87,0,0-.67,5.6-.67,11.2v5.25c0,5.6.67,11.2.67,11.2,0,0,.65,4.77,2.63,6.87,2.53,2.76,5.85,2.67,7.32,2.95,5.31.53,22.56.7,22.56.7,0,0,13.94-.03,23.23-.72,1.29-.16,4.12-.17,6.64-2.93,1.99-2.1,2.63-6.87,2.63-6.87,0,0,.67-5.6.67-11.2v-5.25c0-5.6-.67-11.2-.67-11.2Zm-21.44,13.13l-17.92,9.68v-14.91s0-4.53,0-4.53l8.08,4.4,9.84,5.36Z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
-    </footer>
-  </main>
+    </div>
+  </footer>
 </body>
 
 </html>

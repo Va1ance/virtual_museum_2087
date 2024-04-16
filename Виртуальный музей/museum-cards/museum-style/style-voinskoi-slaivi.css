@@ -1,66 +1,41 @@
 /* hero */
 
 .hero {
-    margin: 0 auto;
-    max-width: 1920px;
-    min-height: 1080px;
     background-image: url("../../img/Other/Panorama_Museum_of_Voinskoi-slavi.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
   }
   
   /* navigation */
-  
-  .navigation-lists {
-    flex-wrap: wrap;
-    justify-content: center;
+
+  .navigation__item-1 {
+    background-image: url("../img-museums/museum-voinskoi-slavi/exposition-1.jpg");
   }
   
-  .navigation-card {
-    display: flex;
-    max-width: 700px;
-    width: 100%;
-    min-height: 500px;
-    padding: 200px 85px 50px 50px;
-    border-radius: 50px;
-    margin-right: 100px;
-    flex-direction: column;
-    flex-shrink: 0;
-    justify-content: end;
-    margin-bottom: 100px;
+  .navigation__item-2 {
+    background-image: url("../img-museums/museum-voinskoi-slavi/exposition-8.jpg");
   }
   
-  .navigation-card:nth-child(2n) {
-    margin-right: 0;
+  .navigation__item-3 {
+    background-image: url("../img-museums/museum-voinskoi-slavi/exposotion-4.jpg");
   }
-  
-  .navigation-card:last-child {
-    margin-right: 0;
-    margin-bottom: 0;
+
+  .navigation__item-4 {
+    background-image: url("../img-museums/museum-voinskoi-slavi/exposotion-5.jpg");
   }
-  
-  .navigation-card-1 {
-    background-image: url("../img-museums/museum-voinskoi-slavi/bg-medals.jpg");
+
+  .navigation__item-5 {
+    background-image: url("../img-museums/museum-voinskoi-slavi/exposotion-6.jpg");
   }
-  
-  .navigation-card-2 {
-    background-image: url("../img-museums/museum-voinskoi-slavi/bg-equipment.jpg");
+
+  .navigation__item-6 {
+    background-image: url("../img-museums/museum-voinskoi-slavi/exposotion-7.jpg");
   }
-  
-  .navigation-card-3 {
-    background-image: url("../img-museums/museum-voinskoi-slavi/bg-hroniks.jpg");
+
+  .navigation__item-7 {
+    background-image: url("../img-museums/museum-voinskoi-slavi/exposotion-2.jpg");
   }
-  
-  .navigation-link-descr {
-    margin: 0;
-    padding-right: 30px;
-    font-size: 60px;
-    color: #fff;
-    font-weight: 900;
-    background-image: url("../../img/loogotype.svg/ArrowWhite.svg");
-    background-repeat: no-repeat;
-    background-size: 30px 40px;
-    background-position: right 24px;
+
+  .navigation__item-8 {
+    background-image: url("../img-museums/museum-voinskoi-slavi/exposotion-3.jpg");
   }
   
   /* medals */

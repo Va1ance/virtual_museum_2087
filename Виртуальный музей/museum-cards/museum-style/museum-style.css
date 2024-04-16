@@ -17,6 +17,58 @@ a {
   color: inherit;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerNarrow-Light'),
+    url('../fonts/Mullernarrowlight.woff2') format('woff2'),
+    url('../fonts/Mullernarrowlight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerNarrow-ExtraBold'),
+    url('../fonts/Mullernarrowextrabold.woff2') format('woff2'),
+    url('../fonts/Mullernarrowextrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Regular'),
+    url("../fonts/MullerRegular.woff2") format("woff2"),
+    url("../fonts/MullerRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Light'),
+    url("../fonts/MullerLight.woff2") format("woff2"),
+    url("../fonts/MullerLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Bold'),
+    url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 img {
   max-width: 100%;
 }
@@ -50,10 +102,10 @@ body {
 }
 
 .container {
-  max-width: 1520px;
+  max-width: 1920px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 200px;
 }
 
 .hidden {
@@ -67,7 +119,7 @@ body {
   overflow: hidden;
 }
 
-.section-title {
+.section__title {
   margin: 0;
   margin-bottom: 100px;
   font-weight: 600;
@@ -76,8 +128,8 @@ body {
   text-align: center;
 }
 
-.section-offset:not(:last-child) {
-  margin-bottom: 200px;
+.section-offset {
+  padding: 100px 0;
 }
 
 /* header */
@@ -86,42 +138,36 @@ body {
   background-color: #fff;
 }
 
-.btn-lists {
+.header {
   padding: 15px 0;
 }
 
-.btn-back {
+.btn__back {
   padding: 45px 0 45px 10px;
   align-items: center;
   font-size: 25px;
   font-weight: 800;
-}
-
-.header-item-1 {
   background-image: url("../../img/loogotype.svg/ArrowBack.svg");
-}
-
-.header-btn-container {
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 30px 30px;
-  padding: 45px 0 45px 25px;
+  padding: 45px 0 45px 35px;
   align-items: center;
   font-size: 25px;
   font-weight: 800;
 }
 
-.header-btn-list {
+.header__back {
+  margin-right: auto;
+}
+
+.menu__item {
   width: 30px;
   height: 30px;
   padding: 45px 0;
 }
 
-.header-left {
-  margin-right: auto;
-}
-
-.header-btn-list:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 130px;
 }
 
@@ -129,121 +175,302 @@ body {
 
 .hero {
   margin: 0 auto;
-  max-width: 1920px;
   min-height: 1080px;
-  background-image: url("../../img/Other/Panorama_Museum_of_Voinskoi-slavi.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* navigation */
 
-.navigation-lists {
+.navigation__list {
   flex-wrap: wrap;
   justify-content: center;
+  gap: var(--gap);
+  --gap: 100px;
+  --offsets: 1;
 }
 
-.navigation-card {
+.navigation__item {
+  background: #878787;
   display: flex;
   max-width: 700px;
-  width: 100%;
-  min-height: 500px;
+  width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
   padding: 200px 85px 50px 50px;
   border-radius: 50px;
-  margin-right: 100px;
   flex-direction: column;
   flex-shrink: 0;
   justify-content: end;
-  margin-bottom: 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.navigation-card:nth-child(2n) {
+.navigation__item:nth-child(2n) {
   margin-right: 0;
 }
 
-.navigation-card:last-child {
+.navigation__item:last-child {
   margin-right: 0;
   margin-bottom: 0;
 }
 
-.navigation-card-1 {
-  background-image: url("../img-museums/museum-voinskoi-slavi/bg-medals.jpg");
-}
-
-.navigation-card-2 {
-  background-image: url("../img-museums/museum-voinskoi-slavi/bg-equipment.jpg");
-}
-
-.navigation-card-3 {
-  background-image: url("../img-museums/museum-voinskoi-slavi/bg-hroniks.jpg");
-}
-
-.navigation-link-descr {
+.navigation__link {
   margin: 0;
-  padding-right: 30px;
-  font-size: 60px;
+  font-size: 45px;
   color: #fff;
   font-weight: 900;
-  background-image: url("../../img/loogotype.svg/ArrowWhite.svg");
-  background-repeat: no-repeat;
-  background-size: 30px 40px;
-  background-position: right 24px;
 }
 
-/* medals */
 
-.medals-list {
-  min-height: 500px;
+/* contacts */
+
+.footer {
   background-color: #fff;
-  padding: 100px 90px 50px 75px;
-  border-radius: 50px;
+}
+
+.footer__container {
+  flex-direction: column;
+}
+
+.footer__list {
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 100px;
+  --offsets: 1;
+  --gap: 100px;
+  margin-bottom: 30px;
+}
+
+.contacts__item {
+  background-color: #fff1e4;
+  border-radius: 30px;
+  width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
+  padding: 30px 100px 55px 30px;
   margin-bottom: 100px;
 }
 
-.medal-list-immage {
-  margin-right: 25px;
+.contacts__item:last-child {
+  margin-right: 0;
 }
 
-.medals-immage {
-  max-width: 500px;
-  width: 100%;
-  min-height: 500px;
-  flex-shrink: 0;
-}
-
-.medal-list-descr {
-  max-width: 810px;
-}
-
-.medals-title {
-  margin: 0;
-  margin-bottom: 20px;
-  font-size: 30px;
-  color: #606060;
-  font-weight: 900;
-}
-
-.second-line {
-  margin: 0;
-  margin-bottom: 25px;
-  font-size: 25px;
-  color: #1B1B1B;
-  font-weight: 900;
-}
-
-.medals-descr {
-  margin: 0;
-  margin-bottom: 30px;
-  color: #292929;
-  font-size: 25px;
-  font-weight: 900;
-  line-height: 30px;
-}
-
-.many-info {
-  font-size: 20px;
-}
-
-.medals-descr:last-child {
+.contacts__item:not(:nth-child(-n)) {
   margin-bottom: 0;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 35px;
+  font-size: 35px;
+  color: #878787;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.contacts__name {
+  margin: 0;
+  margin-bottom: 65px;
+  font-size: 30px;
+  max-width: 390px;
+  font-size: 30px;
+  color: #000;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.contacts__link {
+  font-size: 30px;
+  color: #878787;
+  font-weight: 600;
+  font-style: normal;
+  width: 100%;
+}
+
+.contacts__descr {
+  font-size: 30px;
+  color: #5c5c5c;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.contacts__container {
+  flex-direction: column;
+}
+
+.social__item {
+  width: 50px;
+  height: 50px;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.social__item {
+  transition: .3s;
+}
+
+.social__item:hover {
+  content: "";
+  transform: scale(1.5);
+}
+
+.social__item:active {
+  content: "";
+  transform: scale(.5);
+}
+
+@media (max-width: 1200px) {
+  .navigation__list {
+    --gap: 50px;
+  }
+
+  .navigation__item {
+    padding: 200px 30px 30px 30px;
+  }
+
+  .navigation__link {
+    font-size: 35px;
+  }
+
+  .container {
+    padding: 0 80px;
+  }
+
+  .footer__list {
+    gap: 60px;
+  }
+
+  .contacts__item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 920px) {
+
+  .section-offset {
+    padding: 50px 0;
+  }
+
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 50px;
+  }
+
+  .container {
+    padding: 0 50px;
+  }
+
+  .navigation__list {
+    --gap: 20px;
+  }
+
+  .navigation__item {
+    border-radius: 32px;
+  }
+
+  .navigation__link {
+    font-size: 30px;
+  }
+
+  .footer__list {
+    gap: 45px;
+  }
+
+  .contacts__item {
+    padding: 25px 80px 30px 20px;
+  }
+
+  .contacts__title {
+    margin-bottom: 30px;
+  }
+
+  .contacts__name {
+    margin-bottom: 50px;
+  }
+
+  .contacts__link {
+    font-size: 22px;
+  }
+
+  .contacts__descr {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 720px) {
+  .navigation__link {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 590px) {
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .header__back {
+    align-items: center;
+  }
+
+  .header__menu {
+    align-items: center;
+  }
+
+  .menu__item {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .btn__back {
+    padding: 0 0 0 35px;
+    font-size: 15px;
+    background-size: 20px 20px;
+
+  }
+
+  .hero {
+    min-height: 690px;
+  }
+
+  .section__title {
+    font-size: 35px;
+  }
+
+  .navigation__list {
+    flex-wrap: wrap;
+  }
+
+  .navigation__item {
+    width: 100%;
+  }
+
+  .contacts__item {
+    border-radius: 20px;
+  }
+
+  .contacts__title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .contacts__name {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .contacts__link {
+    font-size: 12px;
+  }
+
+  .contacts__descr {
+    font-size: 12px;
+  }
 }
